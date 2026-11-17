@@ -1,0 +1,56 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 30px;
+    color: #333;
+}
+
+h1 {
+    color: #123b65;
+    text-align: center;
+}
+
+h2 {
+    color: #1769aa;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+li {
+    margin: 10px;
+}
+
+
+.university-logo {
+    width: 85px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+}
+.moving-text {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.moving-text p {
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    animation: moveText 8s linear infinite;
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
